@@ -4,11 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfCoreAppMultilanguage"
-        xmlns:i18n="clr-namespace:WpfCoreAppMultilanguage.I18n"
         mc:Ignorable="d"
         Title="Win" Height="450" Width="800">
     
     <Grid>
-        <Label Content="{Binding ConverterParameter=Hello, Converter={StaticResource i18nConverter}}" />
+        <Button Click="Button_Click" x:Name="btn" />
     </Grid>
 </Window>

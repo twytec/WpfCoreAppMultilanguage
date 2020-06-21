@@ -7,18 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="I18n\Resource.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resource.resx</DependentUpon>
-    </Compile>
+    <None Remove="I18n\de.json" />
+    <None Remove="I18n\en.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="I18n\Resource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <EmbeddedResource Include="I18n\de.json" />
+    <EmbeddedResource Include="I18n\en.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
 </Project>

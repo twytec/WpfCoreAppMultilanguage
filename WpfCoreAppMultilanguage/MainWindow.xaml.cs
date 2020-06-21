@@ -24,7 +24,12 @@ namespace WpfCoreAppMultilanguage
         {
             InitializeComponent();
 
-            var la = WpfCoreAppMultilanguage.I18n.Resource.ResourceManager.GetString("Hello");
+            btn.Content = App.Text.Hello;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(App.Text.Hello);
         }
     }
 }

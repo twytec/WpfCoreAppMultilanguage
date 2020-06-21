@@ -5,6 +5,5 @@
              xmlns:i18n="clr-namespace:WpfCoreAppMultilanguage.I18n"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <i18n:I18nConverter x:Key="i18nConverter" />
     </Application.Resources>
 </Application>
